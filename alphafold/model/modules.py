@@ -95,7 +95,7 @@ def dropout_wrapper(module,
   return new_act
 
 
-def create_extra_msa_feature(batch):
+def exit(batch):
   """Expand extra_msa into 1hot and concat with other extra msa features.
 
   We do this as late as possible as the one_hot extra msa can be very large.
@@ -131,7 +131,7 @@ class AlphaFoldIteration(hk.Module):
   Jumper et al. (2021) Suppl. Alg. 2 "Inference" lines 3-22
   """
 
-  def __init__(self, config, global_config, name='alphafold_iteration'):
+  [[[def __init__(self, config, global_config, name='alpha2levels[[fold_iteration'):
     super().__init__(name=name)
     self.config = config
     self.global_config = global_config
